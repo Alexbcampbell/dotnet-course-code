@@ -7,60 +7,77 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            string[] myGroceryArray = ["Cheese", "Milk"];
-            // myGroceryArray[1] = "Yogurt";
-            // //myGroceryArray[2] = "Yogurt";
+            // int myInt = 5;
+            // int mySecondInt = 10;
 
-            // Console.WriteLine(myGroceryArray[0]);
-            // Console.WriteLine(myGroceryArray[1]);
+            // Console.WriteLine(myInt.Equals(mySecondInt));
+            // Console.WriteLine(myInt.Equals(mySecondInt / 2));
 
-            List<string> myGroceryList = ["Ice Cream", "Crackers"];
-            //  Console.WriteLine(myGroceryList[0]);
-            //  Console.WriteLine(myGroceryList[1]);
+            // Console.WriteLine(myInt != mySecondInt);
+            // Console.WriteLine(myInt == mySecondInt / 2);
+            // Console.WriteLine(myInt != mySecondInt / 3);
 
-             IEnumerable<string> myGroceryEnumerable = myGroceryList;
+            // Console.WriteLine(myInt >= mySecondInt);
+            // Console.WriteLine(myInt >= mySecondInt / 2);
+            // Console.WriteLine(myInt > mySecondInt / 2);
+            // Console.WriteLine(myInt > mySecondInt -6);
+            // Console.WriteLine(myInt <= mySecondInt);
+            // Console.WriteLine(myInt < mySecondInt);
 
-             List<string> mySecondGroceryList = myGroceryEnumerable.ToList();
+            Console.WriteLine(5 > 10 && 5 < 10);
 
-             int[,] myMultiDimensionalArray = {
-                {1,2},//0
-                {3,4},//1
-                {5,6}//2
-             };
 
-            // Console.WriteLine(myMultiDimensionalArray[0,0]);
-            // Console.WriteLine(myMultiDimensionalArray[2,1]);
 
-            Dictionary<string, int> groceryPrices = new Dictionary<string, int>();
+            // Console.WriteLine(myInt);
 
-            groceryPrices["Cheese"] = 5;
-             groceryPrices["Yogurt"] = 3;
+            // myInt++;
 
-            Console.WriteLine(groceryPrices["Cheese"]);
-            Console.WriteLine(groceryPrices["Yogurt"]);
-            // Console.WriteLine(groceryPrices["Random"]);
+            // Console.WriteLine(myInt);
+
+            // myInt += 7;
+
+            // Console.WriteLine(myInt);
+
+            // myInt -= 8;
+
+            // Console.WriteLine(myInt);
+
+            // Console.WriteLine(myInt * mySecondInt);
+
+            // Console.WriteLine(mySecondInt / myInt);
+
+            // Console.WriteLine(mySecondInt + myInt);
+
+            // Console.WriteLine(myInt - mySecondInt);
+
+            // Console.WriteLine(5+5 * 10);
+            // Console.WriteLine((5+5) * 10);
+
+
+            // Console.WriteLine(Math.Pow(5,4));
+
+            // Console.WriteLine(Math.Sqrt(25));
+
+            // string myString = "test";
+
+            // Console.WriteLine(myString);
+
+            // myString += ". second part .";
+
+            // Console.WriteLine(myString);
+
+            // myString += ". third part .";
+
+            // Console.WriteLine(myString);
+
+            // string[] myStringArray = myString.Split(' ');
+            // Console.WriteLine(myStringArray[0]);
+            // Console.WriteLine(myStringArray[1]);
+            
+
+
+
         }
+        
     }
 }
-
-// namespace HelloWorld
-// {
-//     internal class Program
-//     {
-//         static void Main(string[] args)
-//         {
-//             string[] myGroceryArray = ["Cheese", "Milk"];
-//             myGroceryArray[1] = "Yogurt";
-//             //myGroceryArray[2] = "Yogurt";
-//             Console.WriteLine(myGroceryArray[0]);
-//             Console.WriteLine(myGroceryArray[1]);
-
-//             List<string> myGroceryList = new List<string>();
-
-//             myGroceryList.Add("Ice Cream");
-//             myGroceryList.Add("Crackers");
-//              Console.WriteLine(myGroceryList[0]);
-//              Console.WriteLine(myGroceryList[1]);
-//         }
-//     }
-// }
