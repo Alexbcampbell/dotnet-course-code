@@ -1,13 +1,4 @@
-﻿// // See https://aka.ms/new-console-template for more information
-// Console.WriteLine("Hello C# Programmers");
-// Console.WriteLine("Hello C# Programmers");
-// Console.Write("First");
-// Console.Write("Second");
-// Console.WriteLine("Hello C# Programmers");
-// Console.Write("Third");
-
-// Console.WriteLine(args[0]);
-
+﻿
 using System;
 
 namespace HelloWorld
@@ -16,66 +7,60 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-                       //// 1 byte is made up of 8 bits 00000000 - these bits can be used to store a number as follows
-            // //// Each bit can be worth 0 or 1 of the value it is placed in
-            // ////// From the right we start with a value of 1 and double for each digit to the left
-            // //// 00000000 = 0
-            // //// 00000001 = 1
-            // //// 00000010 = 2
-            // //// 00000011 = 3
-            // //// 00000100 = 4
-            // //// 00000101 = 5
-            // //// 00000110 = 6
-            // //// 00000111 = 7
-            // //// 00001000 = 8
- 
-            // 1 byte (8 bit) unsigned, where signed means it can be negative
-            byte myByte = 255;
-            byte mySecondByte = 0;
- 
-            // 1 byte (8 bit) signed, where signed means it can be negative
-            sbyte mySbyte = 127;
-            sbyte mySecondSbyte = -128;
- 
- 
-            // 2 byte (16 bit) unsigned, where signed means it can be negative
-            ushort myUshort = 65535;
- 
-            // 2 byte (16 bit) signed, where signed means it can be negative
-            short myShort = -32768;
- 
-            // 4 byte (32 bit) signed, where signed means it can be negative
-            int myInt = 2147483647;
-            int mySecondInt = -2147483648;
- 
-            // 8 byte (64 bit) signed, where signed means it can be negative
-            long myLong = -9223372036854775808;
- 
- 
-            // 4 byte (32 bit) floating point number
-            float myFloat = 0.751f;
-            float mySecondFloat = 0.75f;
- 
-            // 8 byte (64 bit) floating point number
-            double myDouble = 0.751;
-            double mySecondDouble = 0.75d;
- 
-            // 16 byte (128 bit) floating point number
-            decimal myDecimal = 0.751m;
-            decimal mySecondDecimal = 0.75m;
- 
-            Console.WriteLine(myFloat - mySecondFloat);
-            Console.WriteLine(myDouble - mySecondDouble);
-            Console.WriteLine(myDecimal - mySecondDecimal);
- 
- 
- 
-            string myString = "Hello World";
-            // Console.WriteLine(myString);
-            string myStringWithSymbols = "!@#$@^$%%^&(&%^*__)+%^@##$!@%123589071340698ughedfaoig137";
-            // Console.WriteLine(myStringWithSymbols);
- 
-            bool myBool = true;
+            string[] myGroceryArray = ["Cheese", "Milk"];
+            // myGroceryArray[1] = "Yogurt";
+            // //myGroceryArray[2] = "Yogurt";
+
+            // Console.WriteLine(myGroceryArray[0]);
+            // Console.WriteLine(myGroceryArray[1]);
+
+            List<string> myGroceryList = ["Ice Cream", "Crackers"];
+            //  Console.WriteLine(myGroceryList[0]);
+            //  Console.WriteLine(myGroceryList[1]);
+
+             IEnumerable<string> myGroceryEnumerable = myGroceryList;
+
+             List<string> mySecondGroceryList = myGroceryEnumerable.ToList();
+
+             int[,] myMultiDimensionalArray = {
+                {1,2},//0
+                {3,4},//1
+                {5,6}//2
+             };
+
+            // Console.WriteLine(myMultiDimensionalArray[0,0]);
+            // Console.WriteLine(myMultiDimensionalArray[2,1]);
+
+            Dictionary<string, int> groceryPrices = new Dictionary<string, int>();
+
+            groceryPrices["Cheese"] = 5;
+             groceryPrices["Yogurt"] = 3;
+
+            Console.WriteLine(groceryPrices["Cheese"]);
+            Console.WriteLine(groceryPrices["Yogurt"]);
+            // Console.WriteLine(groceryPrices["Random"]);
         }
     }
 }
+
+// namespace HelloWorld
+// {
+//     internal class Program
+//     {
+//         static void Main(string[] args)
+//         {
+//             string[] myGroceryArray = ["Cheese", "Milk"];
+//             myGroceryArray[1] = "Yogurt";
+//             //myGroceryArray[2] = "Yogurt";
+//             Console.WriteLine(myGroceryArray[0]);
+//             Console.WriteLine(myGroceryArray[1]);
+
+//             List<string> myGroceryList = new List<string>();
+
+//             myGroceryList.Add("Ice Cream");
+//             myGroceryList.Add("Crackers");
+//              Console.WriteLine(myGroceryList[0]);
+//              Console.WriteLine(myGroceryList[1]);
+//         }
+//     }
+// }
